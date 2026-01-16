@@ -1,0 +1,94 @@
+
+body {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+}
+
+.octofit-navbar {
+  background: linear-gradient(90deg, #0d47a1 0%, #1976d2 100%) !important;
+  box-shadow: 0 2px 8px rgba(13, 71, 161, 0.15);
+}
+
+.navbar-brand, .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.navbar-brand {
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link.active, .nav-link:hover {
+  color: #ffd600 !important;
+}
+
+.card {
+  border-radius: 1rem;
+  border: none;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.08);
+}
+
+.card-body h1, .card-body .display-4 {
+  color: #0d47a1;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+  border: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.15);
+}
+
+.btn-outline-primary {
+  color: #1976d2;
+  border-color: #1976d2;
+  font-weight: 600;
+}
+.btn-outline-primary:hover {
+  background: #1976d2;
+  color: #fff;
+}
+
+table.table {
+  background: #f5faff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.07);
+}
+th {
+  background: #1976d2;
+  color: #fff;
+  font-weight: 600;
+}
+tr:nth-child(even) {
+  background: #e3f2fd;
+}
+tr:hover {
+  background: #bbdefb;
+}
+
+a {
+  color: #1976d2;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #0d47a1;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0d47a1;
+  font-weight: 700;
+}
+
+/* Custom style for OctoFit logo in navbar */
+.navbar .navbar-brand img {
+  margin-right: 0.5rem;
+}
