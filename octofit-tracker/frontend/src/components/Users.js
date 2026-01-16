@@ -21,27 +21,31 @@ const Users = () => {
       <div className="card shadow">
         <div className="card-body">
           <div className="d-flex justify-content-between align-items-center mb-3">
-            <h2 className="mb-0">Users</h2>
-            <button className="btn btn-primary" onClick={() => window.location.reload()}>Refresh</button>
+            <h2 className="mb-0 display-6">Users</h2>
+            <button className="btn btn-primary" onClick={() => window.location.reload()}>
+              <i className="bi bi-arrow-clockwise me-1"></i>Refresh
+            </button>
           </div>
-          <table className="table table-striped table-hover">
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>Username</th>
-                <th>Email</th>
-              </tr>
-            </thead>
-            <tbody>
-              {users.map((user, idx) => (
-                <tr key={user.id || idx}>
-                  <td>{user.id}</td>
-                  <td>{user.username}</td>
-                  <td>{user.email}</td>
+          <div className="table-responsive">
+            <table className="table table-striped table-hover align-middle">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Username</th>
+                  <th scope="col">Email</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {users.map((user, idx) => (
+                  <tr key={user.id || idx}>
+                    <td>{user.id}</td>
+                    <td>{user.username}</td>
+                    <td>{user.email}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>

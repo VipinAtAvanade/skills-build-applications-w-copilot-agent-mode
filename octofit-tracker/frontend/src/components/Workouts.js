@@ -21,29 +21,33 @@ const Workouts = () => {
       <div className="card shadow">
         <div className="card-body">
           <div className="d-flex justify-content-between align-items-center mb-3">
-            <h2 className="mb-0">Workouts</h2>
-            <button className="btn btn-primary" onClick={() => window.location.reload()}>Refresh</button>
+            <h2 className="mb-0 display-6">Workouts</h2>
+            <button className="btn btn-primary" onClick={() => window.location.reload()}>
+              <i className="bi bi-arrow-clockwise me-1"></i>Refresh
+            </button>
           </div>
-          <table className="table table-striped table-hover">
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Duration</th>
-              </tr>
-            </thead>
-            <tbody>
-              {workouts.map((workout, idx) => (
-                <tr key={workout.id || idx}>
-                  <td>{workout.id}</td>
-                  <td>{workout.name}</td>
-                  <td>{workout.type}</td>
-                  <td>{workout.duration}</td>
+          <div className="table-responsive">
+            <table className="table table-striped table-hover align-middle">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Duration</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {workouts.map((workout, idx) => (
+                  <tr key={workout.id || idx}>
+                    <td>{workout.id}</td>
+                    <td>{workout.name}</td>
+                    <td>{workout.type}</td>
+                    <td>{workout.duration}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
